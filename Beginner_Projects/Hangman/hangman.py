@@ -62,11 +62,6 @@ def get_word_list():
         content_list = [word.strip() for word in content_list]
         return content_list
 
-def get_man(index):
-    if index >= 7:
-        return "You have run out of attempts!"
-    return HANGMANPICS[index]
-
 def start_game():
     word_list = get_word_list()
     selected_word = word_list[randint(0, len(word_list))]
