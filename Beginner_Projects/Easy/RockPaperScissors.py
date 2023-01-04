@@ -1,8 +1,7 @@
 # Super basic Rock paper scissors game in python
-
 from random import randint
 CHOICES = [1, 2, 3]
-# R P S
+#          R  P  S
 
 def convert_move(move):
     if move == "r":
@@ -13,29 +12,27 @@ def convert_move(move):
         return 3
 
 def determine_winner(player_move: str, computer_move: str):
+    # Draw
+    if player_move == computer_move:
+        return "Draw"
+
     # Rock
     if player_move == 1 and computer_move == 2:
         return "Computer"
     if player_move == 1 and computer_move == 3:
         return "Player"
-    if player_move == 1 and computer_move == 1:
-        return "Draw"
-    
+
     # Paper
     if player_move == 2 and computer_move == 3:
         return "Computer"
     if player_move == 2 and computer_move == 1:
         return "Player"
-    if player_move == 2 and computer_move == 2:
-        return "Draw"
-    
+
     # Scissiors
     if player_move == 3 and computer_move == 1:
         return "Computer"
     if player_move == 3 and computer_move == 2:
         return "Player"
-    if player_move == 3 and computer_move == 3:
-        return "Draw"
 
 def start_game():
     player_score = 0
@@ -60,7 +57,6 @@ def start_game():
                 computer_score += 1
         else:
             print(winner)
-
 
 if __name__ == "__main__":
     start_game()
