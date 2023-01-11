@@ -14,7 +14,7 @@ def Recursive_BinarySearch(target, number_list, high, low):
         else:
             return -1
 
-# Binary Search using a non-recursive method
+# Binary Search using a iterative method
 def Iterative_BinarySearch(target, list):
     max_index = len(list) - 1
     min_index = 0
