@@ -57,7 +57,7 @@ def find_occurrences(s, ch):
     return [i for i, letter in enumerate(s) if letter == ch]
 
 def get_word_list():
-    with open("Beginner_Projects/word_list.txt", "r") as file:
+    with open("word_list.txt", "r") as file:
         content_list =  file.readlines()
         content_list = [word.strip() for word in content_list]
         return content_list
