@@ -10,3 +10,5 @@ if __name__ == "__main__":
     move4 = Pokemon.generate_move_map("Heart Stop", 100000, 0.01)
     pikachu = Pokemon("Pikachu", [move3, move4])
 
+    print(Game.determine_winner_output(charizard.moves[1], pikachu))
+
