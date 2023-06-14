@@ -1,2 +1,2 @@
-# Python-Projects
-Personal python projects I've worked on
+# Python Snippets
+Snippets of Python code that I've written
